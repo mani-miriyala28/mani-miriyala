@@ -1,0 +1,108 @@
+.experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  max-width: 700px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-duration,
+.experience-location {
+  color: rgb(174, 174, 174);
+}
+
+.experience-description {
+  color: rgb(219, 219, 219);
+  margin-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.experience-description li::marker {
+  color: var(--accent-color);
+}
+
+.experience-skills {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.experience-skills > * {
+  background-color: #212121;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  color: lightgray;
+  border-radius: 3rem;
+  border: 1px solid rgba(128, 128, 128, 0.159);
+}
+
+.experience img {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.aboutMe .greet {
+  font-weight: 500;
+}
+
+.aboutMe .description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: rgb(137, 137, 137);
+  line-height: 1.5rem;
+}
+
+.aboutMe .description strong {
+  font-weight: normal;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.aboutMe .description p span {
+  font-weight: 600;
+  font-style: italic;
+  color: lightgray;
+}
+
+.aboutMe .techstack {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.aboutMe .techstack * {
+  height: 1.3rem;
+  border-radius: 3rem;
+  width: max-content;
+}

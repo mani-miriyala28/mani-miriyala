@@ -1,0 +1,9 @@
+.overview {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .overview {
+    flex-direction: column;
+  }
+}

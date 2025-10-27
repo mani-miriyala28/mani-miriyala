@@ -1,0 +1,55 @@
+/* Tab component styles */
+.tab {
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  font-family: cursive;
+}
+
+.tab .menubar {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.tab .menubar .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.tab .nav-item {
+  text-align: center;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  color: gray;
+  background-color: var(--ternary-color);
+  border: 1px solid var(--border-color-secondary);
+  flex-shrink: 0;
+  min-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  transition: 0.2s ease;
+}
+
+.tab .nav-item.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.tab .nav-item.active .icon {
+  stroke-width: 2px;
+}
+
+.tab .aboutMe,
+.tab .experience,
+.tab .message,
+.tab .socials {
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  max-width: 700px;
+}

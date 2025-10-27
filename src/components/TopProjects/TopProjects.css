@@ -1,0 +1,93 @@
+.topProjects .projects--title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.topProjects .projects-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .topProjects .projects-container {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+}
+
+.topProjects .projects-container .project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  overflow: auto;
+  cursor: pointer;
+}
+
+.topProjects .projects-container .project img {
+  margin-block: 1rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.topProjects .projects-container .project .project-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: rgb(164, 164, 164);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.topProjects .projects-container .project .project--links {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.topProjects .projects-container .project .project--links > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topProjects .projects-container .project .project-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.topProjects .projects-container .project .project-details .project-description {
+  font-weight: 300;
+  color: lightgray;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.topProjects .projects-container .project .project-details .project--tech-stack {
+  font-weight: 300;
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.topProjects .projects-container .project .project-details .project--tech-stack .tech {
+  background-color: #26262a;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.159);
+}
